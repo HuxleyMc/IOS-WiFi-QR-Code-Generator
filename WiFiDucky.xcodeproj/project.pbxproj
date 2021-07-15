@@ -12,6 +12,7 @@
 		D938350326A05B7E0070E42E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D938350226A05B7E0070E42E /* Preview Assets.xcassets */; };
 		D938350C26A05BF50070E42E /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938350B26A05BF50070E42E /* Color+Codable.swift */; };
 		D938351026A05C710070E42E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938350F26A05C710070E42E /* HomeView.swift */; };
+		D938351226A067980070E42E /* GenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938351126A067980070E42E /* GenerateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D938350426A05B7E0070E42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D938350B26A05BF50070E42E /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		D938350F26A05C710070E42E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D938351126A067980070E42E /* GenerateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D938350F26A05C710070E42E /* HomeView.swift */,
+				D938351126A067980070E42E /* GenerateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				D938351026A05C710070E42E /* HomeView.swift in Sources */,
 				D938350C26A05BF50070E42E /* Color+Codable.swift in Sources */,
 				D93834FC26A05B7B0070E42E /* WiFiDuckyApp.swift in Sources */,
+				D938351226A067980070E42E /* GenerateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
