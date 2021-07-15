@@ -24,6 +24,18 @@ struct HomeView: View {
         name.isEmpty ? "Network" : name
     }
     
+    private var canGenerate: Bool {
+        if ssid.isEmpty || ssid.count < 3 {
+            return false
+        }
+        if password.isEmpty || password.count < 8 {
+            return false
+        }
+        
+        return true
+    }
+    
+    
     var body: some View {
         VStack {
             HStack {
@@ -64,9 +76,10 @@ struct HomeView: View {
                     .bold()
                     .font(.headline)
             }
+            .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
             .accessibilityLabel(Text("Generate QR Code for \(networkName)"))
-            .disabled(ssid.isEmpty || password.isEmpty)
-            .foregroundColor((ssid.isEmpty || password.isEmpty) ? .gray : /*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .disabled(!canGenerate)
+            .foregroundColor(!canGenerate ? .gray : /*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
         }
         .padding()
     }
