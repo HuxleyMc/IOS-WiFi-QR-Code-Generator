@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D93834FC26A05B7B0070E42E /* WiFiDuckyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93834FB26A05B7B0070E42E /* WiFiDuckyApp.swift */; };
-		D93834FE26A05B7B0070E42E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93834FD26A05B7B0070E42E /* ContentView.swift */; };
 		D938350026A05B7E0070E42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93834FF26A05B7E0070E42E /* Assets.xcassets */; };
 		D938350326A05B7E0070E42E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D938350226A05B7E0070E42E /* Preview Assets.xcassets */; };
+		D938350C26A05BF50070E42E /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938350B26A05BF50070E42E /* Color+Codable.swift */; };
+		D938351026A05C710070E42E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938350F26A05C710070E42E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D93834F826A05B7B0070E42E /* WiFiDucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiDucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93834FB26A05B7B0070E42E /* WiFiDuckyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiDuckyApp.swift; sourceTree = "<group>"; };
-		D93834FD26A05B7B0070E42E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D93834FF26A05B7E0070E42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D938350226A05B7E0070E42E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D938350426A05B7E0070E42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D938350B26A05BF50070E42E /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		D938350F26A05C710070E42E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,10 @@
 		D93834FA26A05B7B0070E42E /* WiFiDucky */ = {
 			isa = PBXGroup;
 			children = (
+				D938350E26A05C490070E42E /* Views */,
+				D938350D26A05C430070E42E /* Models */,
+				D938350A26A05BDB0070E42E /* Extensions */,
 				D93834FB26A05B7B0070E42E /* WiFiDuckyApp.swift */,
-				D93834FD26A05B7B0070E42E /* ContentView.swift */,
 				D93834FF26A05B7E0070E42E /* Assets.xcassets */,
 				D938350426A05B7E0070E42E /* Info.plist */,
 				D938350126A05B7E0070E42E /* Preview Content */,
@@ -67,6 +71,29 @@
 				D938350226A05B7E0070E42E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D938350A26A05BDB0070E42E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D938350B26A05BF50070E42E /* Color+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D938350D26A05C430070E42E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D938350E26A05C490070E42E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D938350F26A05C710070E42E /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93834FE26A05B7B0070E42E /* ContentView.swift in Sources */,
+				D938351026A05C710070E42E /* HomeView.swift in Sources */,
+				D938350C26A05BF50070E42E /* Color+Codable.swift in Sources */,
 				D93834FC26A05B7B0070E42E /* WiFiDuckyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
