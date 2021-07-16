@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to WiFi Ducky 👋</h1>
+<h1 align="center">Welcome to WiFi Ducky 🦆</h1>
 <p>
   <a href="https://twitter.com/HuxleyMc" target="_blank">
     <img alt="Twitter: HuxleyMc" src="https://img.shields.io/twitter/follow/HuxleyMc.svg?style=social" />
@@ -7,7 +7,8 @@
 
 > IOS WiFi QR Code Generator
 
-<video src="./WiFiDuckyDemo.mp4" height="500px" autoplay />
+<video src="https://github.com/HuxleyMc/IOS-WiFi-QR-Code-Generator/blob/main/WiFiDuckyDemo.mp4?raw=true" height="500px" autoplay >
+</video>
 
 
 ## Author
