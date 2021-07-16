@@ -14,6 +14,7 @@ struct HomeView: View {
     @State var name: String = ""
     @State var ssid: String = ""
     @State var password: String = ""
+    @State var isPresented: Bool = false
     private let color: Color = Color.random
     
     private var qrString: String {
@@ -69,24 +70,46 @@ struct HomeView: View {
                             .stroke(Color.black, lineWidth: 1)
                     )
             }
-
+            
             Spacer()
-            NavigationLink(destination: GenerateView(qrString: qrString, name: networkName)) {
-                Text("Generate")
-                    .bold()
-                    .font(.headline)
+            Button("Generate") {
+                isPresented = true
             }
             .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
             .accessibilityLabel(Text("Generate QR Code for \(networkName)"))
             .disabled(!canGenerate)
             .foregroundColor(!canGenerate ? .gray : /*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            
         }
+        .sheet(isPresented: $isPresented, content: {
+            NavigationView {
+                GenerateView(qrString: qrString, name: networkName)
+                    .navigationBarItems(trailing: Button(action: {
+                        isPresented = false
+                    }) {
+                        ZStack {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 12, height: 12, alignment: .center)
+                                .foregroundColor(.gray)
+                                .font(Font.title.weight(.bold))
+                                
+                            Circle()
+                                .frame(width: 30, height: 30, alignment: .center)
+                                .foregroundColor(.gray)
+                                .opacity(0.13)
+                        }
+                        .accessibilityLabel(Text("Close generate"))
+                    })
+            }
+            
+        })
         .padding()
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(isPresented: true)
     }
 }
