@@ -7,8 +7,8 @@
 
 > IOS WiFi QR Code Generator
 
-<video src="https://github.com/HuxleyMc/IOS-WiFi-QR-Code-Generator/blob/main/WiFiDuckyDemo.mp4?raw=true" height="500px" autoplay >
-</video>
+<img src="https://github.com/HuxleyMc/IOS-WiFi-QR-Code-Generator/blob/main/WiFiDuckyDemo.gif?raw=true" height="500px" >
+</img>
 
 
 ## Author
